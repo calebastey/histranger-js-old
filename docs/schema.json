@@ -1,0 +1,21 @@
+{
+  "songs": [
+    {
+      "_id": "abc123",
+      "name": "Runaway",
+      "takes": [
+        {
+          "_id": "runaway_1",
+          "created": "9/18/2016 15:00:00",
+          "filename": "runaway_1.mp3",
+          "comments": [
+            {
+              "user_id": "caleb",
+              "comment": "Great track"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
