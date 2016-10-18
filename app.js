@@ -50,12 +50,14 @@ router.post('/take/:songname', function(req, res) {
 /*
  *  Static File Serving
  */
+app.use(express.static('client/public'));
+
 app.get('/', function (req, res) {
-    res.sendFile('public/views/index.html', {'root': __dirname});
+    res.sendFile('client/public/views/index.html', {'root': __dirname});
 });
 
 app.get('/new_song', function(req, res) {
-    res.sendFile('public/views/new_song.html', {'root': __dirname});
+    res.sendFile('client/public/views/new_song.html', {'root': __dirname});
 });
 
 app.listen(port, function() {
